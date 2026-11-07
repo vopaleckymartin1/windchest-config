@@ -2698,7 +2698,7 @@ class ConfiguratorController {
             });
             if (!this.port) {
                 this.port = await navigator.serial.requestPort({
-                    filters: [PICO_2_FILTER],
+                    filters: [],
                 });
             }
             await this.port.open({ baudRate: 115200 });
